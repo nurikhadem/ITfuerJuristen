@@ -1,0 +1,13 @@
+OCR-Behandlung und Export der PDF-Quelldateien
+CSV-Datei mit den Dateinamen erstellt: ls -AL ./ConvertedToTXT > ConvertedToTXTTitles.CSV
+txt-Dateien mit Textwrangler geöffnet und in allen Dateien folgende Änderungen vorgenommen:
+  cmd-shift-h: find "\n" replace with "-"
+  cmd-shift-h: find ";" replace with ":"
+
+TODO
+append all txt-files into single csv file
+import into ml
+https://gallery.azure.ai/Experiment/Text-Classification-Step-1-of-5-data-preparation-3
+follow steps :)
+  
+  
