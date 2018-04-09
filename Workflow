@@ -3,11 +3,16 @@ CSV-Datei mit den Dateinamen erstellt: ls -AL ./ConvertedToTXT > ConvertedToTXTT
 txt-Dateien mit Textwrangler geöffnet und in allen Dateien folgende Änderungen vorgenommen:
   cmd-shift-h: find "\n" replace with "-"
   cmd-shift-h: find ";" replace with ":"
+append all txt-files into single csv file with dragndrop of selected files into file in textwrangler
+Remove all comma from files to prevent erroneus column interpretation
+Create Labels in textwrangler:
+  replace [0-9] with ""
+  replace different strings etc
+remove everything from lines except first chars in excel
+  =LINKS(B246;2)
+
 
 TODO
-append all txt-files into single csv file
 import into ml
 https://gallery.azure.ai/Experiment/Text-Classification-Step-1-of-5-data-preparation-3
 follow steps :)
-  
-  
