@@ -10,6 +10,8 @@ Create Labels in textwrangler:
   replace different strings etc
 remove everything from lines except first chars in excel
   =LINKS(B246;2)
+Batch convert rtf to txt in mac os
+find . -name \*.rtf -print0 | xargs -0 textutil -convert txt
 
 
 TODO
