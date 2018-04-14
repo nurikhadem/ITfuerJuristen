@@ -5,13 +5,18 @@ txt-Dateien mit Textwrangler geöffnet und in allen Dateien folgende Änderungen
   cmd-shift-h: find ";" replace with ":"
 append all txt-files into single csv file with dragndrop of selected files into file in textwrangler
 Remove all comma from files to prevent erroneus column interpretation
-Create Labels in textwrangler:
-  replace [0-9] with ""
-  replace different strings etc
-remove everything from lines except first chars in excel
-  =LINKS(B246;2)
-Batch convert rtf to txt in mac os
-find . -name \*.rtf -print0 | xargs -0 textutil -convert txt
+CSV-Datei mit Inhalten bereinigt, bspw:
+  cmd-shift-h: find ".*eferendarexamensklausur ­ Öffentliches Recht:" replace with ""
+  cmd-shift-h: find ".*[0-9] von [0-9]" replace with ""
+Dann Label eingefügt: VR=4, ZR=0
+## Excel fügt random line breaks ein und zerstört so die Datei
+Label-CSV in Textwrangler erstellt:
+  cmd-shift-h: find "0.*" replace with "0"
+  cmd-shift-h: find "4.*" replace with "4"
+Als Titel gesetzt: sentiment_label	tweet_text
+  
+
+
 
 
 TODO
