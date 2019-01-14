@@ -1,5 +1,116 @@
+8 - LOOPS
+
+- 3 -
 num = 1
 
 while num < 11:  # Fill in the condition
   print num ** 2# Print num squared
   num += 1# Increment num (make sure to do this!)
+
+- 4 -
+choice = raw_input('Enjoying the course? (y/n)')
+
+while choice != "y" and choice != "n":  # Fill in the condition (before the colon)
+  choice = raw_input("Sorry, I didn't catch that. Enter again: ")
+
+- 5 -
+count = 0
+
+while count < 10: # Add a colon
+  print count
+  count += 1# Increment count
+  
+  - 8 -
+from random import randint
+
+# Generates a number from 1 through 10 inclusive
+random_number = randint(1, 10)
+guesses_left = 3
+while guesses_left > 0:# Start your game!
+  guess = raw_input('Please guess a number in between 1 and 10!')
+  if int(guess) == int(random_number):
+    print "You win!"
+    break
+  guesses_left -= 1
+else:
+  print "You lose! The number was %d" % random_number
+  
+- 10 -
+hobbies = []
+
+# Add your code below!
+for i in range(3):
+  hobby = raw_input("please enter Your a hobby: ")
+  hobbies.append(hobby)
+print hobbies
+print range(3)
+
+- 11 -
+thing = "spam!"
+
+for c in thing:
+  print c
+
+word = "eggs!"
+
+for c in word:
+  print c# Your code here!
+  
+- 11 -
+phrase = "A bird in the hand..."
+
+# Add your for loop
+for char in phrase:
+  if char == "a" or char == "A":
+    print "X",
+  else:
+    print char,
+#Don't delete this print statement!
+
+ - 13 -
+numbers  = [7, 9, 12, 54, 99]
+
+print "This list contains: "
+
+for num in numbers:
+  print num
+
+# Add your loop below!
+print "These are the elements squared: "
+
+for num in numbers:
+  print num ** 2
+  
+  - 14 -
+  d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
+
+for key in d:
+  # Your code here!
+  print key, 
+  print d[key]
+  
+- 15 -
+choices = ['pizza', 'pasta', 'salad', 'nachos']
+
+print 'Your choices are:'
+for index, item in enumerate(choices):
+  print index+1, item
+  
+- 16 - 
+list_a = [3, 9, 17, 15, 19]
+list_b = [2, 4, 8, 10, 30, 40, 50, 60, 70, 80, 90]
+
+for a, b in zip(list_a, list_b):
+  # Add your code here!
+  if a > b:
+    print a
+  else:
+    print b
+
+- 19 -
+ToDoList = ['build a network','write stuff down','actually go home']
+
+for i in ToDoList:
+  print i
+else:
+  print 'that is all :)'
